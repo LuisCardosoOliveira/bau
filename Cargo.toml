@@ -9,6 +9,7 @@ edition = "2021"
 byteorder = "1.4.3"
 crc = "3"
 serde = { version = "1.0", features = ["derive"] }
+bincode = "1.3.3"
 
 [lib]
 name = "libbau"
@@ -17,3 +18,7 @@ path = "src/lib.rs"
 [[bin]]
 name = "bau_mem"
 path = "src/bau_mem.rs"
+
+[[bin]]
+name = "bau_disk"
+path = "src/bau_disk.rs"
